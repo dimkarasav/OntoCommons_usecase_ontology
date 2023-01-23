@@ -1,0 +1,683 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#"
+     xml:base="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-6="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#3">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#hasParameters -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#hasParameters">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#Process"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#ProcessParameters"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#is3DprintInput -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#is3DprintInput">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#Fillament"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#3Dprinting"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#isNanoindentationInput -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#isNanoindentationInput">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#Material"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#Nanoindentation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#isPerformedDuring -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#isPerformedDuring">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#ParticleEmissionMeasurement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#3Dprinting"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#measures_from_cpc -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#measures_from_cpc">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#ParticleEmissionMeasurement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#cpc_measurements"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#measures_from_smps -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#measures_from_smps">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#ParticleEmissionMeasurement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#smps_measurements"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#measures_nanoElasticModulus -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#measures_nanoElasticModulus">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#Nanoindentation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#nanoElasticModulus"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#measures_nanoHardness -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#measures_nanoHardness">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#Nanoindentation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#nanoHardness"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#3Dprints -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#3Dprints">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#3Dprinting"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#3DprintedObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#hasMaterialName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#hasMaterialName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#Material"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#hasParameterName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#hasParameterName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#ProcessParameters"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#hasParameterUnit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#hasParameterUnit">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#ProcessParameters"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#hasParameterValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#hasParameterValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#ProcessParameters"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#hasReferenceUnit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#hasReferenceUnit">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#MeasuredQuantity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#hasTimestamp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#hasTimestamp">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#cpc_measurements"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#hasValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#MeasuredQuantity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#Fillament -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#Fillament">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#Material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#Material -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#Material"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#MeasuredQuantity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#MeasuredQuantity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#Nanoindentation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#Nanoindentation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#ParticleEmissionMeasurement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#ParticleEmissionMeasurement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PrintedSquare -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PrintedSquare">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#3DprintedObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PrintedStripe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PrintedStripe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#3DprintedObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#Process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#Process"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#ProcessParameters -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#ProcessParameters"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#cpc_measurements -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#cpc_measurements">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#MeasuredQuantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#nanoElasticModulus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#nanoElasticModulus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#MeasuredQuantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#nanoHardness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#nanoHardness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#MeasuredQuantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#smps_measurements -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#smps_measurements">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#MeasuredQuantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#3DprintedObject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#3DprintedObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#Material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#3DprinterParameters -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#3DprinterParameters">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#ProcessParameters"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#3Dprinting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#3Dprinting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PrintedSquare"/>
+        <isNanoindentationInput rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#process_nanoindent_PETG_bulk_220"/>
+        <hasMaterialName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polyethylene terephthalate glycol - PETG</hasMaterialName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_max_concentration -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_max_concentration">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#cpc_measurements"/>
+        <hasReferenceUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">particles / cm^3</hasReferenceUnit>
+        <hasTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-10-13T17:58:13-00:00</hasTimestamp>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7564.0</hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_nanoElasticModulus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_nanoElasticModulus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#nanoElasticModulus"/>
+        <hasReferenceUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giga Pascal</hasReferenceUnit>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.388</hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_nanoHardness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_nanoHardness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#nanoHardness"/>
+        <hasReferenceUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giga Pascal</hasReferenceUnit>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.122</hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_115p5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_115p5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#smps_measurements"/>
+        <hasReferenceUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">particles / cm^3</hasReferenceUnit>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1805.0</hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_11p5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_11p5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#smps_measurements"/>
+        <hasReferenceUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">particles / cm^3</hasReferenceUnit>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">41.06</hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_154p0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_154p0">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#smps_measurements"/>
+        <hasReferenceUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">particles / cm^3</hasReferenceUnit>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">931.0</hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_15p4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_15p4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#smps_measurements"/>
+        <hasReferenceUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">particles / cm^3</hasReferenceUnit>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">86.88</hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_205p4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_205p4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#smps_measurements"/>
+        <hasReferenceUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">particles / cm^3</hasReferenceUnit>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_20p5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_20p5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#smps_measurements"/>
+        <hasReferenceUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">particles / cm^3</hasReferenceUnit>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">67.9</hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_273p8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_273p8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#smps_measurements"/>
+        <hasReferenceUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">particles / cm^3</hasReferenceUnit>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_27p4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_27p4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#smps_measurements"/>
+        <hasReferenceUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">particles / cm^3</hasReferenceUnit>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">150.0</hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_365p2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_365p2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#smps_measurements"/>
+        <hasReferenceUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">particles / cm^3</hasReferenceUnit>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_36p5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_36p5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#smps_measurements"/>
+        <hasReferenceUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">particles / cm^3</hasReferenceUnit>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">551.0</hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_48p7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_48p7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#smps_measurements"/>
+        <hasReferenceUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">particles / cm^3</hasReferenceUnit>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1254.0</hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_64p9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_64p9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#smps_measurements"/>
+        <hasReferenceUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">particles / cm^3</hasReferenceUnit>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1937.0</hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_86p6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_86p6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#smps_measurements"/>
+        <hasReferenceUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">particles / cm^3</hasReferenceUnit>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2202.0</hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_total_channels -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_total_channels">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#smps_measurements"/>
+        <hasReferenceUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">particles / cm^3</hasReferenceUnit>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">9076.0</hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_fillament -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_fillament">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#Fillament"/>
+        <is3DprintInput rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#process_3Dprint_PETG_bulk_220"/>
+        <is3DprintInput rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#process_3Dprint_PETG_stripe_220"/>
+        <isNanoindentationInput rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#process_nanoindent_PETG_fillament"/>
+        <hasMaterialName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polyethylene terephthalate glycol - PETG</hasMaterialName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_fillament_nanoElasticModulus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_fillament_nanoElasticModulus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#nanoElasticModulus"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-11-07T11:17:30Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_fillament_nanoHardness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_fillament_nanoHardness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#nanoHardness"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-11-07T11:17:14Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_stripe_220 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_stripe_220">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PrintedStripe"/>
+        <isNanoindentationInput rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#process_nanoindent_PETG_stripe_220"/>
+        <hasMaterialName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polyethylene terephthalate glycol - PETG</hasMaterialName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_stripe_220_nanoElasticModulus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_stripe_220_nanoElasticModulus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#nanoElasticModulus"/>
+        <hasReferenceUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giga Pascal</hasReferenceUnit>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.523</hasValue>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-11-07T11:09:31Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_stripe_220_nanoHardness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_stripe_220_nanoHardness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#nanoHardness"/>
+        <hasReferenceUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giga Pascal</hasReferenceUnit>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.12</hasValue>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-11-07T11:09:09Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#nozzle_temperature_PETG_bulk_220 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#nozzle_temperature_PETG_bulk_220">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#3DprinterParameters"/>
+        <hasParameterName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nozzle temperature</hasParameterName>
+        <hasParameterUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Celcius</hasParameterUnit>
+        <hasParameterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">220.0</hasParameterValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#nozzle_temperature_PETG_stripe_220 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#nozzle_temperature_PETG_stripe_220">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#3DprinterParameters"/>
+        <hasParameterName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nozzle temperature</hasParameterName>
+        <hasParameterUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Celcius</hasParameterUnit>
+        <hasParameterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">220.0</hasParameterValue>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-11-07T11:05:15Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#process_3Dprint_PETG_bulk_220 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#process_3Dprint_PETG_bulk_220">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#3Dprinting"/>
+        <hasParameters rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#nozzle_temperature_PETG_bulk_220"/>
+        <untitled-ontology-6:Dprints rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#process_3Dprint_PETG_stripe_220 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#process_3Dprint_PETG_stripe_220">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#3Dprinting"/>
+        <hasParameters rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#nozzle_temperature_PETG_stripe_220"/>
+        <untitled-ontology-6:Dprints rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_stripe_220"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#process_EmissionMeasurement_PETG_bulk_220 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#process_EmissionMeasurement_PETG_bulk_220">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#ParticleEmissionMeasurement"/>
+        <isPerformedDuring rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#process_3Dprint_PETG_bulk_220"/>
+        <measures_from_cpc rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_max_concentration"/>
+        <measures_from_smps rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_115p5"/>
+        <measures_from_smps rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_11p5"/>
+        <measures_from_smps rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_154p0"/>
+        <measures_from_smps rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_15p4"/>
+        <measures_from_smps rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_205p4"/>
+        <measures_from_smps rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_20p5"/>
+        <measures_from_smps rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_273p8"/>
+        <measures_from_smps rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_27p4"/>
+        <measures_from_smps rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_365p2"/>
+        <measures_from_smps rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_36p5"/>
+        <measures_from_smps rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_48p7"/>
+        <measures_from_smps rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_64p9"/>
+        <measures_from_smps rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_channel_86p6"/>
+        <measures_from_smps rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_smps_total_channels"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#process_nanoindent_PETG_bulk_220 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#process_nanoindent_PETG_bulk_220">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#Nanoindentation"/>
+        <measures_nanoElasticModulus rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_nanoElasticModulus"/>
+        <measures_nanoHardness rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_bulk_220_nanoHardness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#process_nanoindent_PETG_fillament -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#process_nanoindent_PETG_fillament">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#Nanoindentation"/>
+        <measures_nanoElasticModulus rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_fillament_nanoElasticModulus"/>
+        <measures_nanoHardness rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_fillament_nanoHardness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#process_nanoindent_PETG_stripe_220 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#process_nanoindent_PETG_stripe_220">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#Nanoindentation"/>
+        <measures_nanoElasticModulus rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_stripe_220_nanoElasticModulus"/>
+        <measures_nanoHardness rdf:resource="http://www.semanticweb.org/dimitris/ontologies/2022/10/untitled-ontology-6#PETG_stripe_220_nanoHardness"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-11-07T11:02:30Z</dc:date>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
